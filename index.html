@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidequest</title>
+    <meta name="description" content="Sidequest gives you small real-world quests that turn ordinary days into better stories.">
+    <meta property="og:title" content="Sidequest">
+    <meta property="og:description" content="Real-world quests for better stories.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/sidequest-icon.png">
+    <link rel="icon" href="assets/sidequest-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Sidequest home">
+        <img src="assets/sidequest-icon.png" alt="" class="brand-icon">
+        <span>Sidequest</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <div class="language-switch" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="cs">CS</button>
+          <button type="button" data-lang="sk">SK</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">iPhone app</p>
+          <h1 data-i18n="hero.title">Sidequest</h1>
+          <p class="hero-text" data-i18n="hero.text">Quests that make a great story. Or a great excuse.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download" data-i18n="hero.cta">Coming to the App Store</a>
+            <a class="button secondary" href="support.html" data-i18n="hero.support">Get support</a>
+          </div>
+        </div>
+
+        <div class="phone" aria-label="Sidequest app preview">
+          <div class="phone-screen">
+            <div class="screen-title" data-i18n="preview.title">Your side quest is:</div>
+            <article class="quest-card">
+              <div class="quest-meta">
+                <span><span aria-hidden="true">🗺️</span> <span data-i18n="preview.category">Exploration</span></span>
+                <span class="difficulty"><span aria-hidden="true">😅</span> <span data-i18n="preview.difficulty">Mildly Inconvenient</span></span>
+              </div>
+              <h2 data-i18n="preview.questTitle">Find the best coffee in a city that is not yours</h2>
+              <p data-i18n="preview.questText">Ask a local. Not Google.</p>
+            </article>
+            <p class="accept" data-i18n="preview.question">Do you accept?</p>
+            <div class="button-row">
+              <span class="mini-button yes" data-i18n="preview.yes">YES</span>
+              <span class="mini-button no" data-i18n="preview.no">NO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="features.eyebrow">What it does</p>
+          <h2 data-i18n="features.title">A tiny push into the real world.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">🎲</span>
+            <h3 data-i18n="features.generate.title">Generate quests</h3>
+            <p data-i18n="features.generate.text">Get a concrete challenge across social, culinary, physical, creative, exploration, mechanical, and random categories.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">🏆</span>
+            <h3 data-i18n="features.badges.title">Unlock badges</h3>
+            <p data-i18n="features.badges.text">Complete quests, build a history, and earn badges for the choices you can proudly explain later.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">📸</span>
+            <h3 data-i18n="features.memory.title">Save the story</h3>
+            <p data-i18n="features.memory.text">Add a photo and note when a quest is complete, then keep it in your history or share it.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div>
+          <p class="eyebrow" data-i18n="levels.eyebrow">Difficulty levels</p>
+          <h2 data-i18n="levels.title">From harmless to highly questionable.</h2>
+          <p data-i18n="levels.text">Tune your comfort zone, block topics you do not want, and keep the app playful without losing control.</p>
+        </div>
+        <div class="level-list">
+          <span class="level safe">😊 <span data-i18n="levels.safe">Fun & Safe</span></span>
+          <span class="level mild">😅 <span data-i18n="levels.mild">Mildly Inconvenient</span></span>
+          <span class="level probably">😬 <span data-i18n="levels.probably">Probably Shouldn't</span></span>
+          <span class="level bsc">💀 <span data-i18n="levels.bsc">Bat Shit Crazy</span></span>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <img src="assets/sidequest-icon.png" alt="" class="download-icon">
+        <div>
+          <h2 data-i18n="download.title">Ready for App Store review.</h2>
+          <p data-i18n="download.text">Use this page as your Marketing URL. Use the support page as your Support URL.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Sidequest</span>
+      <a href="support.html" data-i18n="footer.support">Support</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
