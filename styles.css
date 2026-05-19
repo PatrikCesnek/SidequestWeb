@@ -163,6 +163,10 @@ a {
   color: var(--text);
 }
 
+.inline-button {
+  margin-top: 6px;
+}
+
 .phone {
   justify-self: center;
   width: min(380px, 100%);
