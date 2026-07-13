@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>You've been challenged | Sidequest</title>
+    <meta name="description" content="A friend challenged you to a Sidequest. Open the app to accept it.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0D1117">
+    <meta name="apple-itunes-app" content="app-id=6767996805">
+    <meta property="og:site_name" content="Sidequest">
+    <meta property="og:title" content="You've been challenged ⚔️">
+    <meta property="og:description" content="A friend dares you to do a Sidequest. Are you in?">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sidequest-ios.netlify.app/assets/sidequest-icon.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="assets/sidequest-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main style="min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:16px;">
+      <img src="assets/sidequest-icon.png" alt="Sidequest app icon" width="88" height="88" style="border-radius:20px;">
+      <h1>You've been challenged ⚔️</h1>
+      <p>A friend dares you to do this quest. Opening Sidequest…</p>
+      <p><a id="open-app" href="#">Open in the app</a></p>
+      <p><a id="store-link" href="https://apps.apple.com/app/id6767996805">Don't have Sidequest? Get it on the App Store</a></p>
+    </main>
+    <script>
+      (function () {
+        var id = new URLSearchParams(window.location.search).get("id") || "";
+        // Pool IDs are short alphanumerics (e.g. bsc040) — reject anything else.
+        if (!/^[A-Za-z0-9_-]{1,32}$/.test(id)) { id = ""; }
+
+        var appLink = "sidequest://quest/" + id;
+        var storeLink = "https://apps.apple.com/app/id6767996805";
+        document.getElementById("open-app").setAttribute("href", id ? appLink : storeLink);
+
+        if (id) {
+          // Try the app; if it's not installed nothing happens and the
+          // App Store link stays visible right below.
+          setTimeout(function () { window.location.href = appLink; }, 400);
+        }
+      })();
+    </script>
+  </body>
+</html>
