@@ -12,19 +12,23 @@
     <meta property="og:title" content="You've been challenged ⚔️">
     <meta property="og:description" content="A friend dares you to do a Sidequest. Are you in?">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sidequest-ios.netlify.app/assets/sidequest-icon.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://sidequest-ios.netlify.app/assets/og-challenge.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sidequest-ios.netlify.app/assets/og-challenge.png">
     <link rel="icon" href="assets/sidequest-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main style="min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:16px;">
       <img src="assets/sidequest-icon.png" alt="Sidequest app icon" width="88" height="88" style="border-radius:20px;">
-      <h1>You've been challenged ⚔️</h1>
-      <p>A friend dares you to do this quest. Opening Sidequest…</p>
-      <p><a id="open-app" href="#">Open in the app</a></p>
-      <p><a id="store-link" href="https://apps.apple.com/app/id6767996805">Don't have Sidequest? Get it on the App Store</a></p>
+      <h1 data-i18n="quest.title">You've been challenged ⚔️</h1>
+      <p data-i18n="quest.text">A friend dares you to do this quest. Opening Sidequest…</p>
+      <p><a id="open-app" href="#" data-i18n="quest.open">Open in the app</a></p>
+      <p><a id="store-link" href="https://apps.apple.com/app/id6767996805" data-i18n="quest.store">Don't have Sidequest? Get it on the App Store</a></p>
     </main>
+    <script src="script.js" defer></script>
     <script>
       (function () {
         var id = new URLSearchParams(window.location.search).get("id") || "";
