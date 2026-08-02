@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["68223M5AWX.com.patrikCesnek.Sidequest"],
+        "components": [
+          {
+            "/": "/quest.html",
+            "?": { "id": "?*" },
+            "comment": "Challenge links open the app directly when installed"
+          }
+        ]
+      }
+    ]
+  }
+}

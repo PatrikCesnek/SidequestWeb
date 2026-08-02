@@ -1,0 +1,3 @@
+# Apple requires the AASA file to be served as application/json
+/.well-known/apple-app-site-association
+  Content-Type: application/json
